@@ -1,11 +1,14 @@
 from weapon import Weapon
+from battlefield import Battlefield
 
 class Robot:
     def __init__(self, name) -> None:
-        self.robo_name = 'robo'
-        self.health = 50
-        self.active_weapon = Weapon
+        self.name = 'robo'
+        self.health = 100
+        self.active_weapon = Weapon, 10
     
     def attack(self, dinosaur):
-        pass
+        self.location = 'battlefield'
+        self.active_weapon -= self.dino_health
+        print('dinosaur health,' self.dino_health)
         
