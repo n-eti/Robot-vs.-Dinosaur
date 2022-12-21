@@ -1,13 +1,11 @@
-from robots import Robot
 
 class Dinosaur:
-    def __init__(self, name, attack_power) -> None:
-        self.name = 'dino'
-        self.attack_power = 20
-        self.dino_health = 500
+    def __init__(self, name, attack_power):
+        self.name = name
+        self.attack_power = attack_power
+        self.dino_health = 100
 
         # Method: 
     def attack (self, robot):
-        self.location = 'battlefield'
-        self.attack_power -= self.health
-        print (self.health)
+        robot.health -= self.attack_power
+        # print ('robot health,', self.health)
